@@ -84,8 +84,9 @@
     justify-content:center;
     transform: skew(-20deg, 0deg);
     margin: 0 auto;
-    box-shadow: 23px 23px 0px -18px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: 23px 23px 0px -18px rgba(0, 0, 0, 1);
+    border: none;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
     transition: 200ms all;
   }
   #title:hover {
