@@ -5,10 +5,9 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
+
 import Cnpjs from './components/Cnpjs.vue'
-//<HelloWorld msg="Welcome to Your Vue.js App"/>
-//HelloWorld
+
 export default {
   name: 'App',
   components: {
