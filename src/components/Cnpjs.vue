@@ -40,7 +40,7 @@
         let cnpj = document.getElementById('cnpj').value
         cnpj = cnpj.split(".").join('').split('/').join('').split('-').join('')
         axios
-          .get(`https://www.receitaws.com.br/v1/cnpj/${cnpj}`)
+          .get(`https://api-publica.speedio.com.br/buscarcnpj?cnpj=${cnpj}`)
           .then(res => {
               if (Array.isArray(res) && !res.length) {this.cnpjs = mock;}
               this.cnpjs = res.data;
