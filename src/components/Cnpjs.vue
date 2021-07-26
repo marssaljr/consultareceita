@@ -36,9 +36,6 @@
       };
     },
     methods: {
-      filter: function(cnpjota) {
-			  return cnpjota.split(".").join('').split('/').join('').split('-').join('')
-		  },
       getInfo: function() {
         let cnpj = document.getElementById('cnpj').value
         cnpj = filter(cnpj)
@@ -51,6 +48,9 @@
               console.log(error);
               this.cnpjs = mock;
           })
+      },
+      filter: function(cnpjota) {
+      	return cnpjota.split(".").join('').split('/').join('').split('-').join('')
       },
       caseSensitive: function(word) {
         let item = word.charAt(0).toUpperCase() + word.substring(1).toLowerCase()
