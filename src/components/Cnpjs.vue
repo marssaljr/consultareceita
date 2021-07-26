@@ -36,12 +36,16 @@
       };
     },
     methods: {
+      filter: function(cnpjota) {
+			  return cnpjota.split(".").join('').split('/').join('').split('-').join('')
+		  },
       getInfo: function() {
         let cnpj = document.getElementById('cnpj').value
+        cnpj = filter(cnpj)
         axios
           .get(`https://www.receitaws.com.br/v1/cnpj/${cnpj}`)
           .then(res => {
-              if (res.length < 0) {this.cnpjs = mock;}
+              if (Array.isArray(res) && !res.length) {this.cnpjs = mock;}
               this.cnpjs = res.data;
           }).catch(error => {
               console.log(error);
@@ -51,7 +55,7 @@
       caseSensitive: function(word) {
         let item = word.charAt(0).toUpperCase() + word.substring(1).toLowerCase()
         return item
-      }
+      },
   },
 }
 
