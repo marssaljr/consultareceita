@@ -38,7 +38,7 @@
     methods: {
       getInfo: function() {
         let cnpj = document.getElementById('cnpj').value
-        cnpj = filter(cnpj)
+        cnpj = cnpj.split(".").join('').split('/').join('').split('-').join('')
         axios
           .get(`https://www.receitaws.com.br/v1/cnpj/${cnpj}`)
           .then(res => {
@@ -48,9 +48,6 @@
               console.log(error);
               this.cnpjs = mock;
           })
-      },
-      filter: function(cnpjota) {
-      	return cnpjota.split(".").join('').split('/').join('').split('-').join('')
       },
       caseSensitive: function(word) {
         let item = word.charAt(0).toUpperCase() + word.substring(1).toLowerCase()
