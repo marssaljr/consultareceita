@@ -1,25 +1,10 @@
-# wedecode
+# WeDecode Cnpj Research
 
-## Project setup
+![image](https://user-images.githubusercontent.com/62912704/126934885-9ab3f448-6670-4d94-b285-5becbe327165.png) 
+
+
+## Install on your machine 
 ```
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
 yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-# wedecode-frontend
+```  
