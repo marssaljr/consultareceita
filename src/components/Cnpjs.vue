@@ -1,7 +1,7 @@
 <template id="consulta">
   <div class="container">
     <div id="title">
-      <h1>WeDecode CNPJ</h1>
+      <h1>ConsultaReceita</h1>
     </div>
     <div id="form">
       <form @submit="getInfo" onsubmit="return false">
@@ -58,58 +58,69 @@
 
 </script>
 <style>
-  template {
-    top: 60px;
-  }
   * {
+    padding: 0;
+    margin: 0;
     font-family: 'Nunito', sans-serif;
   }
+
   :root {
     --clr-background: #eceff1;
-    --clr-white: #D2CDEE;
-    --clr-primary: #6847C2;
-    --clr-gray: #263238;
-    --clr-pink: #CB62B9;
-    --clr-purple: #342D86;
-    --clr-gray-black: #0E102A;
-    --clr-black: #010402;
+    --clr-background-two: #D2CDEE;
+    --clr-primary: #5CA0D3;
+    --clr-primary-variant: #7CA0D0;
+    --clr-secondary: #C8E6F5;
+    --clr-third: #6D3939;
+    --clr-third-variant: #5E0A0A;
+    --clr-foreground: #1f1f1f;
+    --clr-black: #1E212D;
+    --clr-white: #F2EEE0;
     --font-size: 16px;
-    --border-radius: 0.2em;
+    --border-radius: 0.5em;
+  }
+  
+  button {
+    height: 50px;
+    font-weight: bold;
+    color: var(--clr-white);
+    border-radius: 0.5em;
+    border: 1px solid var(--clr-foreground);
+    transition: 200ms all;
+    background: var(--clr-primary);
+  }
+  button:hover {
+    background: var(--clr-primary-variant);
+    border: 2px solid var(--clr-foreground);
+    color: var(--clr-foreground);
   }
   #title {
-    background-color: var(--clr-purple);
-    background: #8e2de2;
-    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
-    max-width:300px;
-    justify-content:center;
-    transform: skew(-20deg, 0deg);
+    background: var(--clr-primary);
+    max-width: 320px;
+    justify-content: center;
     margin: 0 auto;
     border: none;
-    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    border-radius: var(--border-radius);
+    box-shadow: 2px 1px 0px 0px var(--clr-white);
+    -webkit-box-shadow: 3px 3px 0px 0px var(--clr-black);
     transition: 200ms all;
   }
   #title:hover {
-    background: -webkit-linear-gradient(to left, #8e2de2, #4a00e0);
-    background: linear-gradient(to left, #8e2de2, #4a00e0);
     transform: scale(1.1) skew(-20deg, 0deg);
   }
   h1 {
     font-weight: bold;
     margin: 5%;
-    color: var(--clr-primary);
-    color: var(--clr-background);
+    color: var(--clr-white);
   }
+
   label {
-    color: var(--clr-white);
+    color: var(--clr-foreground);
   }
+
   p {
-    color: var(--clr-white);
+    color: var(--clr-foreground);
   }
-  body {
-    background-color: var(--clr-background);
-  }
+
   form {
     display: grid;
     gap:  10px;
@@ -117,59 +128,61 @@
   .card {
     margin: 10px;
     border-radius: var(--border-radius);
-    border: 0px solid var(--clr-pink);
-    background: #6441a5;
-    background: -webkit-linear-gradient(to right, #6441a5, #2a0845);
-    background: linear-gradient(to right, #6441a5, #2a0845);
+    border: 1px solid var(--clr-foreground);
+    background: var(--clr-background);
     transition: 200ms all;
   }
   .card:hover {
-    transform: scale(1.1);
-    background: #8e2de2;
-    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
-  }span {
-    background: var(--clr-gray-black);
+    transform: scale(1.05);
+    background: var(--clr-background);
+  }
+  span {
+    background: var(--clr-background);
+    color: var(--clr-foreground);
     height: 1px;
     width: 100%;
   }
   .card .title {
-    padding-top: 5px;
-    background-color: var(--clr-gray-black);
+    border-top-left-radius: calc(var(--border-radius) - 0.1em);
+    border-top-right-radius: calc(var(--border-radius) - 0.1em);
+    background-color: var(--clr-primary-variant);
+  }
+
+  .card .title p {
+    font-weight: bold;
+    margin: auto;
+    color: var(--clr-white);
   }
   .card .content {
-    padding-top: 5px;
+    margin-top: 5px;
   }
-  button {
-    height: 50px;
-    font-weight: bold;
-    color: var(--clr-white);
-    border-radius: var(--border-radius);
-    border: 2px solid var(--clr-white);
-    border-right-width: 5% 5%;
-    background: #8e2de2;
-    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
-    transition: 200ms all;
+  .card .content p {
+    margin-top: 5px;
   }
-  button:hover {
-    background: #8e2de2;
-    border: 1px solid var(--clr-purple);
+  emoji:hover {
+    transition: 300ms all;
+    font-size: 25px;
   }
   input {
     height: 50px;
     padding-left: 20px;
-    color: var(--clr-white);
-    background-color: var(--clr-gray-black);
+    color: var(--clr-foreground);
+    background-color: var(--clr-background);
     font-weight: bold;
     border-radius: var(--border-radius);
-    border: 1px solid var(--clr-primary);
+    border: 1px solid var(--clr-foreground);
+    transition: 300ms all;
+  }
+  input:hover {
+    background: var(--clr-foreground);
+    border: 2px solid var(--clr-foreground);
+    color: var(--clr-secondary);
   }
   nav {
     margin-top: 10px;
-    border: 1px solid var(--clr-primary);
+    background: var(--clr-background);
+    border: none;
     border-radius: var(--border-radius);
-    background-color: var(--clr-gray-black);
     color: var(--clr-white);
   }
   li {

@@ -1,24 +1,24 @@
 <h2 align="center"> 
-  <img alt="wedecode" src="https://imgur.com/rJqg9SP.png" width="300px"/>  
+  <img alt="consultareceita" src="https://imgur.com/rNFral6.png" width="300px"/>  
   <br>  
-  WeDecode - CPNJ Research :rocket:
+  ConsultaReceita - CPNJ Research 🕵️
 </h2>  
 
 <p align="center"> 
-  <img alt="Gitub top language" src="https://img.shields.io/github/languages/top/marssaljr/wedecode-frontend.svg"> 
+  <img alt="Gitub top language" src="https://img.shields.io/github/languages/top/marssaljr/consultareceita.svg"> 
  
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/marssaljr/wedecode-frontend.svg"> 
-  <a href="https://github.com/marssaljr/wedecode-frontend/commits/main"> 
-    <img alt="last commit" src="https://img.shields.io/github/last-commit/marssaljr/wedecode-frontend.svg"> 
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/marssaljr/consultareceita.svg"> 
+  <a href="https://github.com/marssaljr/consultareceita/commits/main"> 
+    <img alt="last commit" src="https://img.shields.io/github/last-commit/marssaljr/consultareceita.svg"> 
   </a> 
  
-  <a href="https://github.com/marssaljr/wedecode-frontend/issues"> 
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/marssaljr/wedecode-frontend.svg"> 
+  <a href="https://github.com/marssaljr/consultareceita/issues"> 
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/marssaljr/consultareceita.svg"> 
   </a> 
  
-  <img alt="GitHub" src="https://img.shields.io/github/license/marssaljr/wedecode-frontend.svg"> 
+  <img alt="GitHub" src="https://img.shields.io/github/license/marssaljr/consultareceita.svg"> 
  
-  <img alt="deploy status" src="https://wakatime.com/badge/github/marssaljr/wedecode-frontend.svg"> 
+  <img alt="deploy status" src="https://wakatime.com/badge/github/marssaljr/consultareceita.svg"> 
 </p> 
  
 <h4 align="center">
@@ -30,10 +30,10 @@
   <a href="#memo-license">License</a>
 </p>
  
-![image](https://user-images.githubusercontent.com/62912704/126936149-d5cda32b-6b2b-4174-8257-a125860521b5.png) 
+![image](https://imgur.com/blK1QCJ.png) 
  
 <p align="center"> 
-  <a href="https://wedecode-frontend.vercel.app/" target="_blank"> 
+  <a href="https://consultareceita.vercel.app/" target="_blank"> 
     Demo on Vercel
   </a>
 </p>
@@ -49,15 +49,15 @@ This project was developed with the following technologies:
 ## :rocket: Run on your machine 
  
 ```
-git clone https://github.com/marssaljr/wedecode-frontend.git
-yarn install
+git clone https://github.com/marssaljr/consultareceita.git
+cd consultareceita && yarn install
 yarn serve
 ```  
  
  
 ## :memo: License
 
-This project is under the MIT license. See the [LICENSE](https://github.com/marssaljr/letmeask/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/marssaljr/consultareceita/blob/main/LICENSE) for more information.
 
 ---
 
